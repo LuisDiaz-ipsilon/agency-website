@@ -34,11 +34,11 @@ const Index: FC<Props> = () => {
             <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"></path>
           </svg>
         </button>
-        <h1 className="mb-[1.75vw] md:text-[4.6vw] md:mb-[2.25vw] text-center text-[3.5vw] font-bold leading-[100%]">Request form</h1>
+        <h1 className="mb-[1.75vw] md:text-[4.6vw] md:mb-[2.25vw] text-center text-[3.5vw] font-bold leading-[100%]">Start Your Free Website Trial Today</h1>
       </div>
       <form className="flex h-full flex-col items-center" onSubmit={handleSubmit}>
         <div className="flex flex-wrap">
-          {RADIO_FIELDS.map((item) => (
+          {/* {RADIO_FIELDS.map((item) => (
             <RadioGroup
               onValueChange={(value) => setForm((prev) => ({ ...prev, [item.formKey]: value }))}
               key={item.title}
@@ -55,7 +55,7 @@ const Index: FC<Props> = () => {
                 </div>
               ))}
             </RadioGroup>
-          ))}
+          ))} */}
 
           <div className="w-full space-y-[2vw] text-[1.1vw]">
             {INPUT_FIELDS.map((item) => (
@@ -89,7 +89,7 @@ const Index: FC<Props> = () => {
           </div>
 
           <Button
-            title="Submit"
+            title="Build My Free Website"
             type="submit"
             classes="py-[1.2vw] px-[5vw] md:py-[1.6vw] md:px-[8vw] text-[1.1vw] md:text-[1.5vw] bg-bg-1/90 hover:bg-bg-1/80"
             btnClasses="p-[0.2vw] md:p-[0.25vw] capitalize self-start mt-[2.5vw]"

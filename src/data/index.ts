@@ -27,10 +27,10 @@ export const CARDS = [
   {
     title: 'Design',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam alias placeat temporibus mollitia doloribus. Consequatur aperiam facilis culpa fuga quia! Labore, sequi! Optio officiis obcaecati tempora voluptates consequuntur, placeat ad.',
+      '',//Remplazar despues cuando decida un texto
     services: [
-      ['Web app', 'Branding'],
-      ['Mobile app', 'Logo'],
+      ['Simple Business Websites', 'Google Business Profile Setup'],
+      ['Local SEO Boost', 'Updates & Maintenance'],
     ],
     number: '01.',
     classes: '',
@@ -59,32 +59,26 @@ export const CARDS = [
 export const APPROACH_CARDS = [
   {
     icon: First,
-    title: 'Consultation',
+    title: 'We build your website for free for 7 days',
     description:
-      "We listen carefully to the customer's wishes and ideas about the project. Then we share our vision and, based on this exchange, come to a common agreement.",
+      "",
   },
   {
     icon: Second,
-    title: 'Joint review',
+    title: 'You test it with real customers',
     description:
-      'Then we start creating the design. After completion, we conduct a joint review, where the customer, if desired, can make changes.',
+      '',
   },
   {
     icon: Third,
-    title: 'Development',
-    description: 'After the design is approved, we proceed to the actual development of the product.',
-  },
-  {
-    icon: Fourth,
-    title: 'Testing',
-    description:
-      'Once the development is complete, we thoroughly test each component of the product. Then we invite the customer for user testing.',
+    title: 'If you like it, keep it live for just [$XX/month]',
+    description: '',
   },
   {
     icon: Fifth,
     title: 'Final result',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates laboriosam ad eius, culpa soluta ab. Beatae optio quas adipisci aliquam quia velit soluta iste dicta, modi tenetur magnam, aut laborum placeat est. Unde minima amet illo eveniet qui sunt omnis laudantium laboriosam, officia dignissimos molestias tempore velit. Provident, explicabo. Dolor.',
+      'One new customer can pay for your website for the entire year. Don’t miss out on people searching for you online.',
   },
 ];
 
@@ -140,8 +134,7 @@ export const INPUT_FIELDS = [
   { label: 'Your name', name: 'first', classes: 'inline-block !w-[calc(50%-2vw)] mr-[4vw]', required: true },
   { label: 'Phone', name: 'phone', classes: 'inline-block !w-[calc(50%-2vw)]', type: 'number', required: true },
   { label: 'Email', name: 'email', classes: '', type: 'email' },
-  { label: 'Company name', name: 'company', classes: '', required: true },
-  { label: 'Company website', name: 'websiteUrl', classes: '' },
+  { label: 'Business Name', name: 'company', classes: '', required: true }
 ];
 
 export const BOOK_FORM_DEFAULT_STATE = {
