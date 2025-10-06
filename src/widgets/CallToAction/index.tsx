@@ -30,11 +30,10 @@ const Index: FC<Props> = () => {
       </div>
 
       <footer className="flex justify-between border-t border-t-gray-800 px-[5vw] py-[1.8vw] text-[1.6vw] md:text-[2vw] md:py-[2.4vw] md:px-[2vw] ">
-        <div>© 2023. <a href="https://github.com/Shatlyk1011/agency-website" target='_blank' rel="norelopener">Source Code</a></div>
+        <div>© 2023. <a href="" target='_blank' rel="norelopener">Name Company</a></div>
         <ul className="flex space-x-[3vw] ">
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
+          <li>Home.</li>
+          <li>Contact.</li>
         </ul>
       </footer>
     </SectionOpacity>

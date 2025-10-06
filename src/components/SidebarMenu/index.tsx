@@ -47,10 +47,10 @@ const Index: FC<Props> = ({ close }) => {
             ))}
           </div>
 
-          <Link
+          {/* <Link
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/Shatlyk1011/agency-website"
+            href=""
             className='flex items-center justify-center bg-zinc-600 active:bg-zinc-700 transition hover:bg-zinc-700/60 px-[0.6vw] py-[0.6vw] rounded-sm gap-[0.6vw] w-full'
           >
             <svg
@@ -63,7 +63,7 @@ const Index: FC<Props> = ({ close }) => {
               ></path>
             </svg>
             <p className='text-[1vw] font-medium tracking-wide'>Give a star</p>
-          </Link>
+          </Link> */}
         </div>
 
 

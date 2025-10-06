@@ -35,25 +35,25 @@ export const CARDS = [
     number: '01.',
     classes: '',
   },
-  {
-    title: 'Fullstack development',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam alias placeat temporibus mollitia doloribus. Consequatur aperiam facilis culpa fuga quia! Labore, sequi! Optio officiis obcaecati tempora voluptates consequuntur, placeat ad.',
-    services: [
-      ['Online shop', 'Web application'],
-      ['CMS', 'API Development'],
-    ],
-    number: '02.',
-    classes: 'border-t border-gray-1/50',
-  },
-  {
-    title: 'Mobile development',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam alias placeat temporibus mollitia doloribus. Consequatur aperiam facilis culpa fuga quia! Labore, sequi! Optio officiis obcaecati tempora voluptates consequuntur, placeat ad.',
-    services: [['Android', 'IOS']],
-    number: '03.',
-    classes: 'border-t border-gray-1/50',
-  },
+  // {
+  //   title: 'Fullstack development',
+  //   description:
+  //     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam alias placeat temporibus mollitia doloribus. Consequatur aperiam facilis culpa fuga quia! Labore, sequi! Optio officiis obcaecati tempora voluptates consequuntur, placeat ad.',
+  //   services: [
+  //     ['Online shop', 'Web application'],
+  //     ['CMS', 'API Development'],
+  //   ],
+  //   number: '02.',
+  //   classes: 'border-t border-gray-1/50',
+  // },
+  // {
+  //   title: 'Mobile development',
+  //   description:
+  //     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam alias placeat temporibus mollitia doloribus. Consequatur aperiam facilis culpa fuga quia! Labore, sequi! Optio officiis obcaecati tempora voluptates consequuntur, placeat ad.',
+  //   services: [['Android', 'IOS']],
+  //   number: '03.',
+  //   classes: 'border-t border-gray-1/50',
+  // },
 ];
 
 export const APPROACH_CARDS = [
@@ -78,7 +78,7 @@ export const APPROACH_CARDS = [
     icon: Fifth,
     title: 'Final result',
     description:
-      'One new customer can pay for your website for the entire year. Don’t miss out on people searching for you online.',
+      'A fully fleshed out website made the same day, tailored to your business that can consistently get you more customers.',
   },
 ];
 
