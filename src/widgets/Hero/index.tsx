@@ -31,36 +31,65 @@ const Hero = () => {
         onMouseMove={(e) => manageMouseMove(e)}
         className="relative left-0 top-0 flex h-screen w-full flex-col items-center justify-center overflow-hidden md:h-[80vh]"
       >
-        <motion.h1
-          ref={heading1}
-          className="relative z-20 mt-[-5vw] w-full text-center text-[4.5vw] md:text-[6vw] md:leading-[1.2] font-extrabold text-text-1 max-w-[95%]"
-          style={{ opacity }}
-        >
-          CREATING{' '}
-          <motion.span
-            animate={{
-              color: [
-                '#E0DAE4', // blanco inicial
-                '#E0DAE4', // mantiene blanco
-                '#000000', // primer parpadeo
-                '#E0DAE4', // vuelve a blanco
-                '#000000', // segundo parpadeo
-                '#E0DAE4', // vuelve a blanco
-                '#000000', // tercer parpadeo
-                '#E0DAE4', // final blanco
-              ],
-            }}
-            transition={{
-              duration: 4, // total (2 seg blanco + 3 parpadeos rápidos)
-              times: [0, 0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.18, 0.21, 0.24, 0.3, 0.36, 0.42, 0.48, 0.56, 0.64, 0.72, 0.8, 0.9, 1],
-              repeat: Infinity, // se repite indefinidamente
-              repeatDelay: 2, // pausa 2 seg antes de repetir
-            }}
-            className="inline-block"
-          >
-            UNIQUENESS
-          </motion.span>
-        </motion.h1>
+        <span className="relative inline-block">
+  {/* Capa inferior: texto metálico con brillo */}
+  <motion.h1
+  ref={heading1}
+  className="relative z-20 mt-[-5vw] w-full text-center text-[4.5vw] md:text-[6vw] md:leading-[1.2] font-extrabold max-w-[95%]"
+  style={{ opacity }}
+>
+  CREATING{' '}
+  <span className="relative inline-block">
+    {/* Capa inferior: texto metálico con brillo */}
+    <motion.span
+      animate={{
+        filter: [
+          'brightness(1)',   // normal
+          'brightness(2.5)', // flash leve
+          'brightness(3.2)', // flash fuerte
+          'brightness(1.2)', // leve
+          'brightness(2.8)', // flash medio
+          'brightness(3.4)', // flash fuerte
+          'brightness(1)',   // normal
+        ],
+      }}
+      transition={{
+        duration: 1.6,
+        times: [0, 0.1, 0.25, 0.4, 0.55, 0.7, 1],
+        ease: 'linear',
+        repeat: Infinity,
+        repeatDelay: 1.2,
+      }}
+      className="relative z-10 bg-gradient-to-r from-white via-gray-300 to-white bg-[length:200%_200%] text-transparent bg-clip-text"
+    >
+      UNIQUENESS
+    </motion.span>
+
+    {/* Capa superior: opacidad negra con muchos flashes */}
+    <motion.span
+      aria-hidden="true"
+      animate={{
+        opacity: [
+          0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, // 10 flashes dentro del mismo ciclo
+        ],
+      }}
+      transition={{
+        duration: 1.6,
+        times: [0, 0.05, 0.1, 0.15, 0.25, 0.35, 0.45, 0.55, 0.7, 0.85, 1],
+        ease: 'linear',
+        repeat: Infinity,
+        repeatDelay: 1.2,
+      }}
+      className="absolute inset-0 z-20 text-black font-extrabold mix-blend-normal"
+    >
+      UNIQUENESS
+    </motion.span>
+  </span>
+</motion.h1>
+
+</span>
+
+
 
         <motion.h2 ref={heading2} className="z-20 text-[1.7vw] md:text-[3vw] font-medium text-text-1/7 5" style={{ opacity }} >
           Innovative marketing that gets you more customers
