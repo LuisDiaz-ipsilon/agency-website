@@ -30,7 +30,7 @@ const Index: FC<Props> = () => {
       </div>
 
       <footer className="flex justify-between border-t border-t-gray-800 px-[5vw] py-[1.8vw] text-[1.6vw] md:text-[2vw] md:py-[2.4vw] md:px-[2vw] ">
-        <div>© 2023. <a href="" target='_blank' rel="norelopener">Name Company</a></div>
+        <div>© 2023. <a href="" target='_blank' rel="norelopener">Jiucel Marketing</a></div>
         <ul className="flex space-x-[3vw] ">
           <li>Home.</li>
           <li>Contact.</li>
