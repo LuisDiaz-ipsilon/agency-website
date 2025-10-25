@@ -36,8 +36,32 @@ const Hero = () => {
           className="relative z-20 mt-[-5vw] w-full text-center text-[4.5vw] md:text-[6vw] md:leading-[1.2] font-extrabold text-text-1 max-w-[95%]"
           style={{ opacity }}
         >
-          CREATING UNIQUENESS
+          CREATING{' '}
+          <motion.span
+            animate={{
+              color: [
+                '#E0DAE4', // blanco inicial
+                '#E0DAE4', // mantiene blanco
+                '#000000', // primer parpadeo
+                '#E0DAE4', // vuelve a blanco
+                '#000000', // segundo parpadeo
+                '#E0DAE4', // vuelve a blanco
+                '#000000', // tercer parpadeo
+                '#E0DAE4', // final blanco
+              ],
+            }}
+            transition={{
+              duration: 4, // total (2 seg blanco + 3 parpadeos rápidos)
+              times: [0, 0.02, 0.04, 0.06, 0.08, 0.1, 0.15, 0.18, 0.21, 0.24, 0.3, 0.36, 0.42, 0.48, 0.56, 0.64, 0.72, 0.8, 0.9, 1],
+              repeat: Infinity, // se repite indefinidamente
+              repeatDelay: 2, // pausa 2 seg antes de repetir
+            }}
+            className="inline-block"
+          >
+            UNIQUENESS
+          </motion.span>
         </motion.h1>
+
         <motion.h2 ref={heading2} className="z-20 text-[1.7vw] md:text-[3vw] font-medium text-text-1/7 5" style={{ opacity }} >
           Innovative marketing that gets you more customers
           <br /> Free for the First Week.
