@@ -8,16 +8,16 @@ const initCursor = () => {
     DYE_RESOLUTION: 1440,
     CAPTURE_RESOLUTION: 512,
 
-    DENSITY_DISSIPATION: 3.5,
-    VELOCITY_DISSIPATION: 1.5,
-    PRESSURE: 0.1,
+    DENSITY_DISSIPATION: 4, //Que tan rapido desaparece el color
+    VELOCITY_DISSIPATION: 4,
+    PRESSURE: 0.5, // fuerza de presión
     PRESSURE_ITERATIONS: 20,
-    CURL: 3,
-    SPLAT_RADIUS: 0.6,
-    SPLAT_FORCE: 6500,
-    SHADING: true,
+    CURL: 1, // cantidad de remolino
+    SPLAT_RADIUS: 0.05, // tamaño de la “salpicadura”
+    SPLAT_FORCE: 6500, // intensidad del trazo
+    SHADING: true, 
     // COLOR_UPDATE_SPEED: 1000,
-    COLOR_UPDATE_SPEED: 10,
+    COLOR_UPDATE_SPEED: 5, // velocidad con que cambian los colores
     PAUSED: false,
     BACK_COLOR: { r: 0, g: 0, b: 0 },
     TRANSPARENT: true,
@@ -1073,12 +1073,10 @@ const initCursor = () => {
     return delta;
   }
 
+  // Genera un tono aleatorio entre blanco (1.0) y gris plateado (0.7)
   function generateColor() {
-    let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-    c.r *= 0.15;
-    c.g *= 0.15;
-    c.b *= 0.15;
-    return c;
+    const base = 0.8 + Math.random() * 0.2; // rango de luminosidad
+    return { r: base * 0.9, g: base * 0.95, b: base * 1.0 };
   }
 
   function HSVtoRGB(h, s, v) {

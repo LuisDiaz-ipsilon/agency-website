@@ -16,6 +16,7 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
   @apply text-text-1;
+  cursor: nonce;
 }
 
 html {
@@ -73,6 +74,20 @@ a {
     transform: rotate(-45deg);
     top: 0px;
   }
+}
+
+.cursor-ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: transform 0.08s ease-out;
+  z-index: 9999;
 }
 
 input::-webkit-outer-spin-button,
